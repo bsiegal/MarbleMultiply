@@ -1,7 +1,7 @@
 import Foundation
 
 
-class PlayScene: CCNode {
+class PlayScene: CCScene {
     /*
         Components added through SpriteBuilder
     */
@@ -26,7 +26,6 @@ class PlayScene: CCNode {
         When scene is loaded
     */
     func didLoadFromCCB() {
-        _answerLbl.string = "0";
         newProblem()
     }
     
@@ -112,7 +111,6 @@ class PlayScene: CCNode {
         let dispatchTime = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
         
         dispatch_after(dispatchTime, dispatch_get_main_queue(), {
-            self._magic.visible = false;
             
             self._marbles.removeAll()
 
@@ -238,6 +236,7 @@ class PlayScene: CCNode {
 
     /*
         This is how to override a function (without the override keyword we'd get a compile error)
+        (Runs once every frame)
     */
     override func update(delta: CCTime) {
         for child in _physicsNode.children {

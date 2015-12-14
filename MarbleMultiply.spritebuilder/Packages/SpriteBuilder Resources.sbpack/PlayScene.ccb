@@ -657,7 +657,7 @@
 						<string>Text</string>
 						<key>value</key>
 						<array>
-							<string>100 x 100 =</string>
+							<string>10 x 10 =</string>
 							<false/>
 						</array>
 					</dict>
@@ -806,6 +806,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -4960,7 +4962,7 @@
 								<string>Text</string>
 								<key>value</key>
 								<array>
-									<string>:O :)</string>
+									<string>0</string>
 									<false/>
 								</array>
 							</dict>

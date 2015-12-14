@@ -1,7 +1,7 @@
 import Foundation
 
 
-class MainScene: CCNode {
+class MainScene: CCScene {
     
     func playPressed() {        
         let scene = CCBReader.loadAsScene("PlayScene");
